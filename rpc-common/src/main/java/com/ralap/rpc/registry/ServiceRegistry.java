@@ -1,14 +1,12 @@
 package com.ralap.rpc.registry;
 
 import com.ralap.rpc.Constant;
-import com.sun.xml.internal.ws.util.StringUtils;
 import java.util.concurrent.CountDownLatch;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;
-import org.jboss.netty.util.internal.StringUtil;
 
 /**
  * 服务注册
