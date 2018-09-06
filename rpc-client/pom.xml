@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ralap.rpc</groupId>
-  <artifactId>rpc-common</artifactId>
+  <artifactId>rpc-client</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -24,22 +24,10 @@
     </plugins>
   </build>
   <dependencies>
-    <!--slf4j日志-->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.7</version>
-    </dependency>
-    <!-- ZooKeeper -->
-    <dependency>
-      <groupId>org.apache.zookeeper</groupId>
-      <artifactId>zookeeper</artifactId>
-      <version>3.4.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.16.20</version>
     </dependency>
     <!-- Netty -->
     <dependency>
@@ -47,22 +35,11 @@
       <artifactId>netty-all</artifactId>
       <version>4.0.24.Final</version>
     </dependency>
-    <!-- Protostuff -->
+    <!-- RPC Common -->
     <dependency>
-      <groupId>com.dyuproject.protostuff</groupId>
-      <artifactId>protostuff-core</artifactId>
-      <version>1.0.8</version>
-    </dependency>
-    <dependency>
-      <groupId>com.dyuproject.protostuff</groupId>
-      <artifactId>protostuff-runtime</artifactId>
-      <version>1.0.8</version>
-    </dependency>
-    <!-- Objenesis -->
-    <dependency>
-      <groupId>org.objenesis</groupId>
-      <artifactId>objenesis</artifactId>
-      <version>2.1</version>
+      <groupId>com.ralap.rpc</groupId>
+      <artifactId>rpc-common</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

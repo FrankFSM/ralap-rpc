@@ -11,6 +11,7 @@ import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.ZooKeeper;
 
 /**
+ * 服务发现
  * @author: ralap
  * @date: created at 2018/9/5 15:27
  */
@@ -83,13 +84,12 @@ public class ServiceDiscover {
                     watchNode(zk);
                 }
             });
-            List<String> dataList = new ArrayList<>();
+            dataList = new ArrayList<>();
             for (String children : childrenList) {
                 byte[] bytes = zk.getData(Constant.REGISTRY_ZK_PATH + "/" + children, false, null);
                 dataList.add(new String(bytes));
             }
             log.info("发现节点{}", dataList);
-            this.dataList = dataList;
         } catch (Exception e) {
             log.error("监听异常", e);
         }
