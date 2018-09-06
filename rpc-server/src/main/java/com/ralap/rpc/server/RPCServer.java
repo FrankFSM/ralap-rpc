@@ -23,6 +23,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.util.CollectionUtils;
 
 /**
+ * 客户端服务
+ * 通过netty接收客户端请求，
  * @author: ralap
  * @date: created at 2018/9/6 9:59
  */
@@ -54,7 +56,7 @@ public class RPCServer implements ApplicationContextAware, InitializingBean {
                 .getBeansWithAnnotation(RPCService.class);
         if (!CollectionUtils.isEmpty(beans)) {
             for (Object bean : beans.values()) {
-                handleMap.put(bean.getClass().getName(), bean);
+                handleMap.put(bean.getClass().getAnnotation(RPCService.class).value().getName(), bean);
             }
         }
     }

@@ -11,6 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import sun.rmi.runtime.Log;
 
 /**
+ * 服务端流水线
+ * 主要接收客户端请求，对request参数分析，执行相关方法，放回结果
+ *
  * @author: ralap
  * @date: created at 2018/9/6 9:33
  */

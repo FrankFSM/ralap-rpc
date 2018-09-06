@@ -12,6 +12,7 @@ import org.apache.zookeeper.ZooKeeper;
 
 /**
  * 服务发现
+ * 为客户端提供服务发现功能
  * @author: ralap
  * @date: created at 2018/9/5 15:27
  */
@@ -23,6 +24,7 @@ public class ServiceDiscover {
     private String registryAddress;
 
     private CountDownLatch latch = new CountDownLatch(1);
+
     private volatile List<String> dataList = new ArrayList<>();
 
 

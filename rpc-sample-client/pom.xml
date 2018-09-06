@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.ralap.rpc</groupId>
-  <artifactId>rpc-sample-server</artifactId>
+  <artifactId>rpc-sample-client</artifactId>
   <dependencies>
     <!-- JUnit -->
     <dependency>
@@ -19,10 +19,22 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <!-- RPC Server -->
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>3.2.12.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>3.2.12.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- RPC Client -->
     <dependency>
       <groupId>com.ralap.rpc</groupId>
-      <artifactId>rpc-server</artifactId>
+      <artifactId>rpc-client</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>

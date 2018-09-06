@@ -17,6 +17,8 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 客户端通讯
+ * 1. 通过netty发送请求对象，接收结果
  * @author: ralap
  * @date: created at 2018/9/6 14:15
  */

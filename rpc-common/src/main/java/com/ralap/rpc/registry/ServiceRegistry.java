@@ -10,6 +10,7 @@ import org.apache.zookeeper.ZooKeeper;
 
 /**
  * 服务注册
+ * 为服务端提供服务注册功能
  *
  * @author: ralap
  * @date: created at 2018/9/5 14:12
