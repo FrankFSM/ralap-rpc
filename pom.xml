@@ -13,8 +13,6 @@
     <module>rpc-client</module>
     <module>rpc-sample-server</module>
     <module>rpc-sample-client</module>
-    <module>rpc-serverapi</module>
+    <module>rpc-server-api</module>
   </modules>
-
-
 </project>
